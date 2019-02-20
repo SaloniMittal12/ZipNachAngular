@@ -1,0 +1,121 @@
+<div class="main-content">
+    <div class="content" style="margin-top: 4%;">
+        <div class="col-md-12 col-sm-6 col-xs-4 contnt-wrapper">
+            <div class="col-sm-3 col-md-3 col-xs-12 no-padding">
+                <span class="legal">Download Old E-Mandate</span>
+                
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-12 no-padding" style="float: right">
+                <div class="toolbar pull-right">
+                    <ul class="toolbar-content">
+                        
+                        <li id="Li1">
+                            
+                            
+                        </li>
+                        <li>
+                            
+                            
+                        </li>
+                        <li>
+                            
+                            
+                        </li>
+                        <li id="Li2">
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+                        <div class="form-group">
+                            <label class="col-sm-3 col-md-2 col-xs-3 control-label no-padding" for="form-field-1">
+                                Date</label>
+                                <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
+                                    <input  type="text" name="datefilter" id="" class="col-sm-12 col-md-12 col-xs-12" />
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-8 no-padding">
+                        <div class="form-group">
+                            <label class="col-sm-4 col-md-3 col-xs-4 control-label no-padding" for="form-field-1">
+                                Reference No</label>
+                                <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
+                                    <input  type="text" name="datefilter" id="" class="col-sm-12 col-md-12 col-xs-12" />
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 no-padding">
+                        <div class="form-group">
+                            <input type="submit"  value="Search"  class="btn btn-success">
+                            <div class="col-sm-12 col-md-12 col-xs-12 no-padding">
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+                        <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+                            <div class="form-group">
+                                <label class="col-sm-3 col-md-2 col-xs-3 control-label no-padding" for="form-field-1">
+                                    Bank</label>
+                               <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
+                            <input  type="text" name="datefilter" id="" class="col-sm-12 col-md-12 col-xs-12" />
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="UnSuccess" style="display: none" class="popupmandate">
+    <div class="popborder">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <img src="../images/caution2.png" class="SavedTick" style="width: 18%;" /></div>
+        <label class="  lblPopup col-md-12 col-sm-12 col-xs-12 no-padding" style="text-align: center;
+            margin-top: 13px;">
+            Are you sure you want to reject mandate?</label>
+        <i class="fa fa-caret-down"></i>
+    </div>
+    <label id="lblUnSuccess" class="col-md-12 col-sm-12 col-xs-12  no-padding" style="/* clear: both;
+        */
+color: #1f3c61;">
+    </label>
+    <div class="form-group" style="margin-top: 6%">
+        <label class="col-sm-3 col-md-3 col-xs-3 control-label" for="form-field-1">
+            Reason</label>
+        <div class="col-sm-9 col-md-9 col-xs-9 no-padding-left">
+            <textarea runat="server" id="txtReason" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12 no-padding"></textarea>
+        </div>
+    </div>
+</div>
+ <div id="success" style="display: none" class="popupmandate">
+    <div class="col-md-12 col-sm-12 col-xs-12 no-padding bgcolor" style="text-align: center">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <img src="../images/saveTickUpdated.png" class="SavedTick" style="width: 15%;" alt="" /></div>
+        <i class="fa fa-caret-down"></i>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center" style="margin-top: 6%; margin-bottom: 3%;">
+        <label class="  lblPopup col-md-12 col-sm-12 col-xs-12 no-padding" style="text-align: center;
+            margin-top: 13px; font-size: 13px;">
+            Submited Successfully</label>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <input type="button" class="col-md-12 col-sm-12 col-xs-12 btn btn-success" id="btnOk"
+            value="OK" style="margin-right: 12%; margin-top: 2%; margin-bottom: 2%;" />
+    </div>
+    <div class="popclose close" id="close" style="right: 2px;" onclick="closePopup()">
+        <label class="">
+            X</label>
+    </div>
+</div>
+
+

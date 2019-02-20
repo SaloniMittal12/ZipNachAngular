@@ -1,0 +1,95 @@
+<div class="main-content">
+        <div class="content" style="margin-top:4%;">
+                       <div class="col-md-6 col-sm-6 col-xs-6 contnt-wrapper" id="">
+                <div class="col-sm-4 col-md-4 col-xs-4 no-padding">
+                    <span class="legal">Bulk E-Mandate</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12" style="float: right">
+                <div class="toolbar pull-right">
+                    <ul class="toolbar-content">
+                        <li>
+                            <div class="form-group">
+                                <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
+                                    Search
+                                </label>
+                                <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
+                                    <input type="text" id="Text1" onkeypress="stopenter(this);" onkeyup="filterEarning(this);" class="col-sm-12 col-md-12 col-xs-12" />
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+        <div id="Divradio"  class="popupmandate no-padding" style="display: none">
+            <div class="col-md-12 col-sm-12 col-xs-12 bgcolor">
+                <div style="margin-top: -14px;">
+                    <h5 style="font-weight: bold; margin-bottom: 8px;" class="text-center">
+                        Account Validation</h5>
+                </div>
+                <div id="AccountNomenclature">
+                    <div class="form-group">
+                        <label class=" col-sm-11 col-xs-11 col-md-11 no-padding control-label " style="padding: 0 19px 0 0;
+                            float: left; font-size: 14px!important; color: #1d9034;">
+                            Account Nomenclature</label>
+                        <div class="col-sm-1 col-xs-1 col-md-1">
+                            <img id="imgNomTick" visible="false"  src="../images/tick-icon.png"
+                                alt="" />
+                            <img id="imgNomCross"  src="../images/Cross-icon.png" alt="" />
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="clearfix">
+                    </div>
+                </div>
+                
+                <div class="clearfix">
+                </div>
+                <div class="form-group bankbg">
+                    <label class="col-sm-3 col-xs-3 col-md-3 amarlabel text-left">
+                        ACCOUNT NO. :</label>
+                    
+                    <div class="col-sm-1 col-xs-1 col-md-1 no-padding">
+                        <img id="Img1" src="../images/tick-icon.png" />
+                       
+                    </div>
+                </div>
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="col-sm-12 col-xs-12 col-md-12" style="margin-top: 2%;">
+            </div>
+            
+            <div class="popclose" id="Div4" style="background: none; border: none">
+                
+                
+            </div>
+        </div>
+    
+    <div id="success" style="display: none" class="popupmandate">
+        <div class="col-md-12 col-sm-12 col-xs-12 no-padding bgcolor" style="text-align: center">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center imgDiv">
+                <img src="../images/saveTickUpdated.png" class="SavedTick" alt="" /></div>
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center" style="margin-top: 6%; margin-bottom: 3%;">
+            <label class="  lblPopup col-md-12 col-sm-12 col-xs-12 no-padding" style="text-align: center;
+                margin-top: 13px; font-size: 13px;">
+                Sent Successfully</label>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <input type="button" class="col-md-12 col-sm-12 col-xs-12 btn btn-success" id="btnOk"
+                value="OK" style="margin-right: 12%; margin-top: 2%; margin-bottom: 2%;" />
+        </div>
+        <div class="popclose close" id="close" style="right: 2px;" onclick="closePopup()">
+            <label class="">
+                X</label>
+        </div>
+    </div>
+
