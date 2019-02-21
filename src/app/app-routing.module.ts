@@ -13,8 +13,10 @@ import { DownloadoldemandateComponent } from './downloadoldemandate/downloadolde
 import { BulkmandateComponent } from './bulkmandate/bulkmandate.component';
 import { BulkemandateComponent } from './bulkemandate/bulkemandate.component';
 import { BulkresendemandateComponent } from './bulkresendemandate/bulkresendemandate.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
+  { path: '', component: LoginComponent},
   { path: 'mandateform', component: MandateformComponent },
   { path: 'user', component: UserComponent},
   { path: 'entity', component: EntityComponent},
