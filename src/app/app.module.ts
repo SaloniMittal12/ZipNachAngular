@@ -18,6 +18,7 @@ import { DownloadoldemandateComponent } from './downloadoldemandate/downloadolde
 import { BulkmandateComponent } from './bulkmandate/bulkmandate.component';
 import { BulkemandateComponent } from './bulkemandate/bulkemandate.component';
 import { BulkresendemandateComponent } from './bulkresendemandate/bulkresendemandate.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -39,8 +40,8 @@ import { BulkresendemandateComponent } from './bulkresendemandate/bulkresendeman
     DownloadoldemandateComponent,
     BulkmandateComponent,
     BulkemandateComponent,
-    BulkresendemandateComponent ,
-    
+    BulkresendemandateComponent,
+    LoginComponent ,
   ],
   imports: [
     BrowserModule,
