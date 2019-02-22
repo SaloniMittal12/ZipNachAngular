@@ -2645,9 +2645,19 @@ pre.prettyprint {
 }
 
 a {
-	color: #585858!important;
+	color: #1f497d!important;
 	text-decoration: none!important;
 }
+
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+	background-color: #1f497d!important;
+	color:#ffffff!important;
+}
+
+
 
 .nav-list>li:before {
 	display: none;
