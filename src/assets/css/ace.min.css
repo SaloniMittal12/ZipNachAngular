@@ -23390,6 +23390,7 @@ th.sorting_disabled {
 
 .navbar {
 	background: rgb(31, 73, 125);
+	z-index: 99999;
 }
 
 .ace-nav>li.light-blue>a {
