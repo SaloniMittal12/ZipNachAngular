@@ -5,7 +5,13 @@ i.ace-icon.fa.fa-key {
          i.fa.fa-leaf {
     margin-right: 6px;
 }
-    
+  
+
+.loginplace{margin: 10% 0px 0px 33% !important;
+    position: absolute !important;
+}
+
+
 .header>.ace-icon {
    margin-top: 11px;
     margin-left: 4px;}
