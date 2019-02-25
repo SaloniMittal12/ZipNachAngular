@@ -425,19 +425,19 @@ ul.toolbar-content {
           border: 1px solid rgb(15, 217, 102);
           background: #c3ffdd;
       }
-      .k-dropdown:focus .k-dropdown-wrap, .radio:focus
+      #mandate .k-dropdown:focus .k-dropdown-wrap, .radio:focus
       {
           box-shadow: 0 0 6px rgb(248, 248, 248);
           border: 1px solid rgb(15, 217, 102);
           background: #c3ffdd;
       }
-      div.radio:focus-within
+      #mandate div.radio:focus-within
       {
           box-shadow: 0 0 6px rgb(248, 248, 248);
           border: 1px solid rgb(15, 217, 102);
           background: #c3ffdd;
       }
-      div.chkbox:focus-within
+      #mandate div.chkbox:focus-within
       {
           box-shadow: 0 0 6px rgb(248, 248, 248);
           border: 1px solid rgb(15, 217, 102);
