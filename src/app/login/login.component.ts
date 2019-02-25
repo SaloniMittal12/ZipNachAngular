@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Attribute} from '@angular/core';
 import { NavbarService } from '../navbar.service';
 
 @Component({
@@ -11,7 +11,8 @@ export class LoginComponent implements OnInit {
   constructor(public nav: NavbarService) { }
 
   ngOnInit() {
-    this.nav.hide();
+   this.nav.hide();
+
   }
 
 }
