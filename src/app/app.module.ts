@@ -19,6 +19,10 @@ import { BulkmandateComponent } from './bulkmandate/bulkmandate.component';
 import { BulkemandateComponent } from './bulkemandate/bulkemandate.component';
 import { BulkresendemandateComponent } from './bulkresendemandate/bulkresendemandate.component';
 import { LoginComponent } from './login/login.component';
+import { GridModule } from '@progress/kendo-angular-grid';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 
 
@@ -46,6 +50,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    GridModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
