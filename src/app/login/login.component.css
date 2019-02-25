@@ -5,7 +5,13 @@ i.ace-icon.fa.fa-key {
          i.fa.fa-leaf {
     margin-right: 6px;
 }
-    
+  
+
+.loginplace{margin: 10% 0px 0px 33% !important;
+    position: absolute !important;
+}
+
+
 .header>.ace-icon {
    margin-top: 11px;
     margin-left: 4px;}
@@ -271,13 +277,14 @@ form {
     bottom: 0px;
     margin-bottom: 6px;
 }
-    @import "compass/css3";
+    
 
 * { box-sizing: border-box; }
 html
 {
     overflow:hidden;
 }
+
 body {
 	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   color:white;
@@ -303,9 +310,10 @@ body {
   height:1px;
   width:100px;
   left:20%;
-  background:linear-gradient(left, #111, #444, #b6b6b8, #444, #111);
+  
   top:0;
 }
+
 
 .form:before {
  	content:"";
