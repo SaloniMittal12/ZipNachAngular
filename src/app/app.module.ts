@@ -50,13 +50,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-<<<<<<< HEAD
-    AppRoutingModule,
-    GridModule,
-    BrowserAnimationsModule,
-=======
-    AppRoutingModule,ReactiveFormsModule
->>>>>>> fc8f9bb8faedbfcfd59bec200967f908e2bde5c6
+    AppRoutingModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
