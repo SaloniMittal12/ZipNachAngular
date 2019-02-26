@@ -2,7 +2,6 @@
 
 <form class="form loginplace" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 
-    
 <div id="login-box">
     <h1>
         Login</h1>
@@ -11,10 +10,10 @@
             <label for="email">
                 UserName</label>
             <input type="text" id="txtUsername" class="form-control" placeholder="Username" formControlName="username" />
-            <div *ngIf="submitted && f.username.errors"  class="invalid-feedback" [ngClass]="{'is-invalid': submitted && f.username.errors}">
+            <!-- <div *ngIf="submitted && f.username.errors"  class="invalid-feedback" [ngClass]="{'is-invalid': submitted && f.username.errors}">
                 <div ngIf="f.username.errors.required"> phone is required</div>
-                             </div>
-                            </div>
+            </div> -->
+        </div>
         <p>
             <label for="password">
                 Password</label>
@@ -22,7 +21,6 @@
                 TextMode="Password" formControlName="password" />
         </p>
         <label id="lblDispMessage" Visible="false" CssClass="err"></label>
-        <!-- <input type="button" class="loginbtn" id="btnLogin" value="Secure Login" /> -->
         <button type="submit"class="loginbtn">Submit</button>
     </div>
     <p class="p-container">
