@@ -1,7 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { NavbarService } from '../navbar.service';
 import { FormGroup, FormControl,  Validators , FormBuilder} from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,6 +10,8 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   submitted = false;
   constructor(public nav: NavbarService, private formBuilder: FormBuilder) { }
+
+
 
   ngOnInit() {
    this.nav.hide();
