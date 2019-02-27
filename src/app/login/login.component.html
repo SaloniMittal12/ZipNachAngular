@@ -6,12 +6,15 @@
         Login</h1>
     <div class="inset">
         <div>
+                <div class="">
             <label for="email">
                 UserName</label>
-            <input type="text" id="txtUsername" class="form-control" placeholder="Username" formControlName="username" />
-            <!-- <div *ngIf="submitted && f.username.errors"  class="invalid-feedback" [ngClass]="{'is-invalid': submitted && f.username.errors}">
-                <div ngIf="f.username.errors.required"> phone is required</div>
-            </div> -->
+
+            <input type="text" class="form-control" placeholder="Username" formControlName="username" [ngClass]="{'is-invalid': submitted && f.username.errors }"  />
+            <div *ngIf="submitted && f.username.errors" >
+                <div *ngIf="f.username.errors.required" id="errorlbl">User Name is required</div>
+            </div>
+        </div>
         </div>
         <p>
         
@@ -21,10 +24,10 @@
                 TextMode="Password" formControlName="password" />
         </p>
         <label id="lblDispMessage" Visible="false" CssClass="err"></label>
-        <button type="submit"class="loginbtn">Submit</button>
+        <button type="submit" class="loginbtn ripple" >Submit</button>
     </div>
     <p class="p-container">
-        <span id="forgotbtn" style="cursor: pointer">Forgot password ?</span>
+        <span id="forgotbtn" style="cursor: pointer">Forgot password!</span>
     </p>
 </div>
 <div id="forgot-box" style="display: none">

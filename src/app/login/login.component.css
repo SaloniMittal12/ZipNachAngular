@@ -365,6 +365,10 @@ label {
     padding-bottom: 9px;
 }
 
+#errorlbl{
+color:red;
+}
+
 input[type=text],
 input[type=password] {
  	width:100%;
@@ -372,7 +376,7 @@ input[type=password] {
   box-shadow:
     0 1px 0 rgba(255,255,255,0.1);
   border-radius:0.3em;
-  margin-bottom:20px;
+  margin-bottom:1px;
 }
 
 label[for=remember]{
@@ -1088,3 +1092,38 @@ a.headerRightIcon i {
         float:right;
         margin-left:3px;
     }
+    .ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #ee1c25 radial-gradient(circle, transparent 1%, #ee1c25 1%) center/15000%;
+  
+}
+.ripple:active {
+  background-color: #dc5d63;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* Button style */
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 12px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #dc5d63;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+}
+.error-msg {
+    color: #a94442;
+  }
+  .fix-error-icon {
+    top: 27px;
+  }
+
+  .is-invalid{    border: 1px solid red;}
