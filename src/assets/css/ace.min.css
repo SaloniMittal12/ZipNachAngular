@@ -9924,7 +9924,7 @@ textarea {
 	color: #858585;
 	background-color: #FFF;
 	border: 1px solid #D5D5D5;
-	padding: 5px 4px 6px;
+	padding: 2px 4px 2px;
 	font-size: 12px;
 	font-family: inherit;
 	-webkit-transition-duration: .1s;
@@ -24804,7 +24804,7 @@ table#tbAdditionalArea {
 
 .DivAllDimensionDetails {
 	border: 1px solid #ddd;
-	padding: 0px 4px 4px 4px;
+	padding: 9px 4px 12px 4px;
 	background: aliceblue;
 	border-radius: 0;
 	border-left: 3px solid #D15C08;
@@ -28992,3 +28992,54 @@ a:hover {
 		box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
 	}
 }
+
+
+.userradiobtn, .radio {
+		margin-bottom: 0px!important;
+		position: relative;
+		display: block;
+		margin-top: 5px!important;
+		margin-bottom: 0px!important;
+}
+
+
+.accessradiobtn, .radio {
+    margin-bottom: 0px!important;
+    position: relative;
+    display: block;
+    margin-top: 1px!important;
+    margin-bottom: 0px!important;
+}
+
+.accessrightbrd{
+	background-color: #f3f1f1;
+    border: 1px solid #d0d0d0;
+    padding: 10px 2px 2px 16px !important;
+    border-radius: 5px;
+    margin-top: 2%;
+    width: 99%;
+
+}
+
+.checkboxpadding{
+	padding: 5px;
+}
+
+
+.pageitems {
+    background-color: #f3f1f1;
+    border: 1px solid #d0d0d0;
+    padding: 10px 2px 2px 16px !important;
+    border-radius: 5px;
+    /* margin-top: 2%; */
+    /* width: 99%; */
+}
+
+
+.entitycheckbox {
+		margin: 0px 0 0 !important;
+		
+		line-height: normal;
+	}
+
+
