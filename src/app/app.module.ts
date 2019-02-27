@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AgGridModule } from 'ag-grid-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -49,8 +50,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginComponent ,
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule, ReactiveFormsModule
+    BrowserModule, GridModule, BrowserAnimationsModule,
+    AppRoutingModule, ReactiveFormsModule, AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent]
