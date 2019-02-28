@@ -23443,6 +23443,7 @@ img.images {
 
 .content {
 	background: #fff;
+	margin-top: 3%;
 }
 
 .toolbar {
@@ -25715,7 +25716,7 @@ a:hover {
 .toolbar-content li {
 	list-style: none;
 	float: left;
-	padding: 6px 1px 2px 1px;
+	padding: 6px 10px 2px 1px;
 }
 
 .toolbar-content i {
