@@ -3099,7 +3099,6 @@ body.mob-safari .sidebar.sidebar-fixed {
 	.sidebar.compact .nav-list>li>a>.menu-icon {
 		display: block;
 		margin: 0;
-		vertical-align: inherit;
 		line-height: 32px;
 		height: 32px;
 		font-size: 20px
@@ -4545,11 +4544,9 @@ body.mob-safari .sidebar.sidebar-fixed {
 		display: inline;
 		line-height: normal;
 		padding-left: 0;
-		height: auto;
 		top: auto;
 		left: auto;
 		z-index: auto;
-		width: auto;
 		border-width: 0!important;
 		background-color: transparent!important;
 		-webkit-box-shadow: none!important;
@@ -9725,8 +9722,7 @@ screen and (min--moz-device-pixel-ratio: 1.2) and (max--moz-device-pixel-ratio: 
 	display: block;
 	line-height: 20px;
 	white-space: normal;
-	vertical-align: middle;
-	margin-left: 50px
+		margin-left: 50px
 }
 
 .dropdown-navbar .msg-title {
@@ -12360,7 +12356,6 @@ tr.detail-row>td {
 }
 
 .widget-toolbar {
-	display: inline-block;
 	padding: 0 10px;
 	line-height: 37px;
 	float: right;
@@ -16648,8 +16643,8 @@ div.dataTables_scrollFoot table {
 }
 
 .dataTable>thead>tr>th[class*=sort]:after {
-	float: right;
-	display: inline;
+	
+	display: inline-block;
 	content: "\f0dc";
 	font-family: FontAwesome;
 	font-size: 13px;
@@ -18276,7 +18271,7 @@ only screen and (min-resolution:144dpi) {
 
 .tree img {
 	display: inline;
-	veritcal-align: middle
+	vertical-align: middle
 }
 
 .tree .icon-open {
@@ -21689,7 +21684,6 @@ input.typeahead.scrollable~.tt-menu {
 	text-align: center;
 	border-radius: 6px 0 0 6px;
 	opacity: .55;
-	vertical-align: top;
 	margin: 0
 }
 
@@ -21857,7 +21851,7 @@ input.typeahead.scrollable~.tt-menu {
 	line-height: 18px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	width: 100%
+	
 }
 
 .tags .tag {
@@ -22699,7 +22693,6 @@ input.typeahead.scrollable~.tt-menu {
 	transition: background-color .2s, border-color .2s;
 	-webkit-transition: background-color .2s, border-color .2s;
 	text-align: center;
-	vertical-align: middle;
 	outline: 0!important
 }
 
