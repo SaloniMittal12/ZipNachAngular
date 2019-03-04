@@ -21,10 +21,9 @@ import { BulkmandateComponent } from './bulkmandate/bulkmandate.component';
 import { BulkemandateComponent } from './bulkemandate/bulkemandate.component';
 import { BulkresendemandateComponent } from './bulkresendemandate/bulkresendemandate.component';
 import { LoginComponent } from './login/login.component';
-//import { GridModule } from '@progress/kendo-angular-grid';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GridModule } from '@progress/kendo-angular-grid';
-
+import { BsDatepickerModule } from 'ngx-bootstrap';
 
 
 
@@ -52,7 +51,7 @@ import { GridModule } from '@progress/kendo-angular-grid';
     LoginComponent ,
   ],
   imports: [
-    BrowserModule, GridModule, BrowserAnimationsModule,
+    BrowserModule, GridModule, BrowserAnimationsModule, [BsDatepickerModule.forRoot()],
     AppRoutingModule, ReactiveFormsModule, AgGridModule.withComponents([])
   ],
   providers: [],
