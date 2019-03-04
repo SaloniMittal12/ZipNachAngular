@@ -23,6 +23,10 @@ import { BulkresendemandateComponent } from './bulkresendemandate/bulkresendeman
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GridModule } from '@progress/kendo-angular-grid';
+import { BsDatepickerModule } from 'ngx-bootstrap';
+
+
+
 import { LoginServiceService } from './webservices/login-service.service';
 import { HttpClientModule , HTTP_INTERCEPTORS } from '@angular/common/http';
 import { XhrInterceptor } from './XhrInterceptor';
@@ -50,8 +54,8 @@ import { XhrInterceptor } from './XhrInterceptor';
     LoginComponent ,
   ],
   imports: [
-    BrowserModule, GridModule, BrowserAnimationsModule, HttpClientModule,
-    AppRoutingModule, ReactiveFormsModule, AgGridModule.withComponents([])
+    BrowserModule, GridModule, BrowserAnimationsModule, [BsDatepickerModule.forRoot()],
+    HttpClientModule, AppRoutingModule, ReactiveFormsModule, AgGridModule.withComponents([])
   ],
   providers: [LoginServiceService, { provide: HTTP_INTERCEPTORS, useClass: XhrInterceptor, multi: true }],
   bootstrap: [AppComponent]
