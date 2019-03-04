@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   submitted = false;
   loginResponse: LoginResponse;
 
-  constructor(public nav: NavbarService, private formBuilder: FormBuilder, private loginServiceService: LoginServiceService, public routes: Router) { }
+ constructor(public nav: NavbarService, private formBuilder: FormBuilder, private loginServiceService: LoginServiceService, public routes: Router) { }
 
 
 
