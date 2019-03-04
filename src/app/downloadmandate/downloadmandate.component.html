@@ -37,16 +37,19 @@
                                 <label class="col-sm-3 col-md-2 col-xs-3 control-label no-padding" for="form-field-1">
                                     Date</label>
                                     <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                        <input  type="text" name="datefilter" id="" class="col-sm-12 col-md-12 col-xs-12" />
+                                        <input  type="text"
+                                        placeholder=""
+                                        class="col-sm-12 col-md-12 col-xs-12 form-control"
+                                        bsDaterangepicker/>
                                     </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-8 no-padding">
                             <div class="form-group">
                                 <label class="col-sm-4 col-md-3 col-xs-4 control-label no-padding" for="form-field-1">
-                                    Reference No</label>
+                                    Reference No.</label>
                                     <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                        <input  type="text" name="datefilter" id="" class="col-sm-12 col-md-12 col-xs-12" />
+                                        <input  type="text" name="datefilter" class="col-sm-12 col-md-12 col-xs-12" />
                                     </div>
                             </div>
                         </div>
@@ -65,7 +68,7 @@
                                     <label class="col-sm-3 col-md-2 col-xs-3 control-label no-padding" for="form-field-1">
                                         Bank</label>
                                    <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                <input  type="text" name="datefilter" id="" class="col-sm-12 col-md-12 col-xs-12" />
+                                <input  type="text" name="datefilter"  class="col-sm-12 col-md-12 col-xs-12" />
                             </div>
                                 </div>
                             </div>
@@ -74,6 +77,17 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-12 col-sm-12 col-xs-12" style="display:none;">
+                <div>
+                  <ag-grid-angular 
+        style="width: 100%; height: 520px;" 
+        class="ag-theme-balham"
+        [rowData]="rowData" 
+        [columnDefs]="columnDefs"
+        ></ag-grid-angular>
+        
+        </div>
+               </div> 
         </div>
     </div>
     <div id="UnSuccess" style="display: none" class="popupmandate">
