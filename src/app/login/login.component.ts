@@ -22,8 +22,6 @@ export class LoginComponent implements OnInit {
 
   }
 
-
-
   ngOnInit() {
     this.nav.hide();
     this.loginForm = this.formBuilder.group({
@@ -49,7 +47,7 @@ export class LoginComponent implements OnInit {
             this.loginResponse = data;
             console.log('objmandate', this.loginResponse);
             if (this.loginResponse.status === 'Success') {
-              this.routes.navigate(['/mandateform']);
+              this.routes.navigate(['/user']);
             } else {
               alert(this.loginResponse.message);
             }
