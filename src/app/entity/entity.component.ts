@@ -6,35 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./entity.component.css']
 })
 export class EntityComponent implements OnInit {
-  /*gridData = [
-    {
-        ProductID: 1,
-        ProductName: 'Chai',
-        UnitPrice: 18,
-        UnitsInStock: 39,
-        Discontinued: false
-    },
-    {
-      ProductID: 1,
-      ProductName: 'Chai',
-      UnitPrice: 18,
-      UnitsInStock: 39,
-      Discontinued: false
-    },
-    {
-      ProductID: 1,
-      ProductName: 'Chai',
-      UnitPrice: 18,
-      UnitsInStock: 39,
-      Discontinued: false
-    },
-    {
-      ProductID: 1,
-      ProductName: 'Chai',
-      UnitPrice: 18,
-      UnitsInStock: 39,
-      Discontinued: true
-    }];*/
+  
 
     columnDefs = [
       {headerName: 'Make', field: 'make', sortable: true, filter: true },
