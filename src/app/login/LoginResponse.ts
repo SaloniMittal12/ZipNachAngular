@@ -1,0 +1,33 @@
+export class LoginResponse {
+    entityid: string;
+    message: string;
+    userName: string;
+    status: string;
+    password: string;
+    createdBy: BigInteger;
+    isZipShoreABPS: string;
+    isRefrenceCheck: string;
+    isRefrenceEdit: string;
+    isOverPrintMandate: string;
+    isLoginFirstTime: string;
+    userType: string;
+    isPhysical: string;
+    emailId: string;
+    isMandate: string;
+    referenceId: BigInteger;
+    userCode: BigInteger;
+    branchName: string;
+    isActive: string;
+    isDeleted: string;
+    lastLogin: string;
+    updatedBy: BigInteger;
+    isBulkMandate: string;
+    passwordKey: string;
+    isEmandate: string;
+    phoneNo: string;
+    isMandateEdit: string;
+    userId: BigInteger;
+    updatedOn: string;
+    createdOn: string;
+    branchId: string;
+}
