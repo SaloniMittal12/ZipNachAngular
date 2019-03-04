@@ -21,13 +21,11 @@ import { BulkmandateComponent } from './bulkmandate/bulkmandate.component';
 import { BulkemandateComponent } from './bulkemandate/bulkemandate.component';
 import { BulkresendemandateComponent } from './bulkresendemandate/bulkresendemandate.component';
 import { LoginComponent } from './login/login.component';
-//import { GridModule } from '@progress/kendo-angular-grid';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GridModule } from '@progress/kendo-angular-grid';
-
-
-
-
+import { LoginServiceService } from './webservices/login-service.service';
+import { HttpClientModule , HTTP_INTERCEPTORS } from '@angular/common/http';
+import { XhrInterceptor } from './XhrInterceptor';
 
 
 @NgModule({
@@ -52,10 +50,11 @@ import { GridModule } from '@progress/kendo-angular-grid';
     LoginComponent ,
   ],
   imports: [
-    BrowserModule, GridModule, BrowserAnimationsModule,
+    BrowserModule, GridModule, BrowserAnimationsModule, HttpClientModule,
     AppRoutingModule, ReactiveFormsModule, AgGridModule.withComponents([])
   ],
-  providers: [],
+  providers: [LoginServiceService, { provide: HTTP_INTERCEPTORS, useClass: XhrInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

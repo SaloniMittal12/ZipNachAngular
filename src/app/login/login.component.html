@@ -1,51 +1,53 @@
 <div>
 
-<form class="form loginplace" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-<div id="login-box">
-    <h1>
-        Login</h1>
-    <div class="inset">
-        <div>
-                <div class="">
-            <label for="email">
-                UserName</label>
+    <form class="form loginplace" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div id="login-box">
+            <h1>
+                Login</h1>
+            <div class="inset">
+                <div>
+                    <div class="">
+                        <label for="email"> UserName</label>
+                        <input type="text" class="form-control" placeholder="Username" formControlName="username"
+                            [ngClass]="{'is-invalid': submitted && f.username.errors }" />
+                        <div *ngIf="submitted && f.username.errors">
+                            <div *ngIf="f.username.errors.required" id="errorlbl">User Name is required</div>
+                        </div>
+                    </div>
 
-            <input type="text" class="form-control" placeholder="Username" formControlName="username" [ngClass]="{'is-invalid': submitted && f.username.errors }"  />
-            <div *ngIf="submitted && f.username.errors" >
-                <div *ngIf="f.username.errors.required" id="errorlbl">User Name is required</div>
+                </div>
+                <div>
+                    <label for="password">
+                        Password</label>
+                    <input type="text" id="txtpassword" class="form-control" placeholder="Password" TextMode="Password"
+                        formControlName="password" [ngClass]="{'is-invalid': submitted && f.password.errors }" />
+                    <div *ngIf="submitted && f.password.errors">
+                        <div *ngIf="f.password.errors.required" id="errorlbl">Password is required</div>
+                    </div>
+                </div>
+                <label id="lblDispMessage" Visible="false" CssClass="err"></label>
+                <button type="submit" class="loginbtn ripple">Submit</button>
             </div>
+            <p class="p-container">
+                <span id="forgotbtn" style="cursor: pointer">Forgot password!</span>
+            </p>
         </div>
-        
+        <div id="forgot-box" style="display: none">
+            <h1>
+                Retrieve Password</h1>
+            <div class="inset">
+                <p style="margin-top: 8%">
+                    <label for="password">
+                        Email</label>
+                    <input name="Email" type="text" id="txtEmail" onkeypress="Removemsg();" class="form-control "
+                        runat="Server" placeholder="Email" />
+                </p>
+                <input type="button" class="loginbtn" id="Button1" runat="server" Text="Agree"
+                    Style="margin-top: 12%" />
+            </div>
+            <p class="p-container">
+                <span id="logbtn" style="cursor: pointer">Login</span>
+            </p>
         </div>
-        <p>
-        
-            <label for="password">
-                Password</label>
-            <input type="text" id="txtpassword" class="form-control" placeholder="Password"
-                TextMode="Password" formControlName="password" />
-        </p>
-        <label id="lblDispMessage" Visible="false" CssClass="err"></label>
-        <button type="submit" class="loginbtn ripple" >Submit</button>
-    </div>
-    <p class="p-container">
-        <span id="forgotbtn" style="cursor: pointer">Forgot password!</span>
-    </p>
-</div>
-<div id="forgot-box" style="display: none">
-    <h1>
-        Retrieve Password</h1>
-    <div class="inset">
-        <p style="margin-top: 8%">
-            <label for="password">
-                Email</label>
-          <input name="Email" type="text" id="txtEmail" onkeypress="Removemsg();" class="form-control "
-                                                    runat="Server" placeholder="Email" />
-        </p>
-        <input type="button" class="loginbtn" id="Button1" runat="server" Text="Agree"  Style="margin-top: 12%" />
-    </div>
-    <p class="p-container">
-        <span id="logbtn" style="cursor: pointer">Login</span>
-    </p>
-</div>
-</form>
+    </form>
 </div>
