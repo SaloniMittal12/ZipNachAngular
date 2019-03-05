@@ -16,9 +16,11 @@ export class LoginComponent implements OnInit {
   submitted = false;
   loginResponse: LoginResponse;
 
-  constructor(public nav: NavbarService, private formBuilder: FormBuilder, private loginServiceService: LoginServiceService, public routes: Router) { }
+  constructor(public nav: NavbarService, private formBuilder: FormBuilder, private loginServiceService: LoginServiceService, public routes: Router) {
 
 
+
+  }
 
   ngOnInit() {
     this.nav.hide();
@@ -28,6 +30,7 @@ export class LoginComponent implements OnInit {
     });
 
   }
+
   onSubmit() {
     this.submitted = true;
     if (this.loginForm.invalid) {
@@ -40,10 +43,13 @@ export class LoginComponent implements OnInit {
       this.loginServiceService.doLogin(loginBody)
         .subscribe(
           data => {
+            sessionStorage.setItem('loginResponse', data);
             this.loginResponse = data;
             console.log('objmandate', this.loginResponse);
             if (this.loginResponse.status === 'Success') {
               this.routes.navigate(['/user']);
+            } else {
+              alert(this.loginResponse.message);
             }
           }
         );
