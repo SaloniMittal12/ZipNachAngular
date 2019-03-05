@@ -1,185 +1,209 @@
 <div class="main-content">
-  <div class="content">
-      <div class="col-md-12 col-sm-6 col-xs-4 contnt-wrapper">
-          <div class="col-sm-6 col-md-6 col-xs-3 no-padding">
-              <span class="legal">User</span>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-9 no-padding" style="float: right">
-              <div class="toolbar pull-right">
-                  <ul class="toolbar-content">
-                      <li id="btnNew"><i class="fa fa-file-text" aria-hidden="true" title="New"></i>
-                          <label>
-                              New</label></li>
-                      <li id="btnEdit"><i class="fa fa-pencil-square-o" aria-hidden="true" title="Edit"></i>
-                          <label>
-                              Edit</label>
-                      </li>
-                      <li id="btnSave"><i class="fa fa-floppy-o" aria-hidden="true" title="Save"></i>
-                          <label>
-                              Save</label></li>
-                      <li style="display:none" id="btnDelete"><i class="fa fa-times" aria-hidden="true" title="Delete"></i>
-                          <label>
-                              Delete</label>
-                      </li>
-                      <li id="btnBack"><i class="fa fa-reply" aria-hidden="true" title="Back"></i>
-                          <label>
-                              Back</label></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      
-      <label id="lblmsg" class="status-lbl" style="display: none;">
-      </label>
-      <div id="divform" class=" col-md-12 col-sm-12 col-xs-12 no-padding" style="display: block;">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-              
-                                      <div class=" col-sm-12 col-xs-12 col-md-12 panelborder">
-                                          <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
-                                              <div class="form-group">
-                                                  <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
-                                                      User Type
-                                                  </label>
-                                                  <div id="User" class="col-sm-8 col-md-7 col-xs-7 no-padding-right radio userradiobtn">
-                                                      <label class="lblradiobtnss col-md-6 col-sm-6 col-xs-6">
-                                                          <input name="rdoNomUser" id="Radio1" value="a" type="radio" onclick="RemoveClass();" />
-                                                          <span>Administrator</span>
-                                                      </label>
-                                                      <label class="lblradiobtnss col-md-6 col-sm-3 col-xs-6">
-                                                          <input name="rdoNomUser" id="Radio2" value="u" type="radio" onclick="RemoveClass();" />
-                                                          <span>User</span>
-                                                      </label>
-                                                  </div>
-                                              </div>
-                                              <div class="form-group">
-                                                  <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
-                                                      User ID
-                                                  </label>
-                                                  <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                      <input type="text" id="txtuserId" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12" />
-                                                  </div>
-                                              </div>
-                                              
-                                          </div>
-                                          <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
-                                              <div class="form-group">
-                                                  <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
-                                                      Contact No.
-                                                  </label>
-                                                  <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                      <input type="text" id="txtContactNo" class="col-sm-12 col-md-12 col-xs-12" />
-                                                  </div>
-                                              </div>
-                                              <div class="form-group">
-                                                  <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
-                                                      Password
-                                                  </label>
-                                                  <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                      <input type="password" id="txtPassWord" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12" />
-                                                  </div>
-                                              </div>
-                                               
-                                         
-                                              
-                                          </div>
-                                          <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
-                                              <div class="form-group">
-                                                  <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
-                                                      Email Address
-                                                  </label>
-                                                  <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                      <input type="text" id="txtEmailId" class="col-sm-12 col-md-12 col-xs-12" />
-                                                  </div>
-                                              </div>
-                                              <div class="form-group">
-                                                  <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
-                                                      Confirm Password
-                                                  </label>
-                                                  <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                      <input type="password" id="txtConFirmPassword" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12" />
-                                                  </div>
-                                              </div>
-                                                
-                                      </div>
-                                      
 
+    <div class="content" style="margin-top:12%!important;">
+        <div class="col-md-12 col-sm-6 col-xs-4 contnt-wrapper">
+            <div class="col-sm-6 col-md-6 col-xs-3 no-padding">
+                <span class="legal">User</span>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-9 no-padding" style="float: right">
+                <div class="toolbar pull-right">
+                    <ul class="toolbar-content">
+                        <li #btnNew disabled="true"><i class="fa fa-file-text" aria-hidden="true" title="New"></i>
+                            <label>
+                                New</label></li>
+                        <li #btnEdit disabled="true"><i class="fa fa-pencil-square-o" aria-hidden="true"
+                                title="Edit"></i>
+                            <label>
+                                Edit</label>
+                        </li>
+                        <li #btnSave><i class=" fa fa-floppy-o" aria-hidden="true" title="Save"></i>
+                            <label>
+                                Save</label></li>
+                        <li #btnDelete style="display:none"><i class="fa fa-times" aria-hidden="true"
+                                title="Delete"></i>
+                            <label>
+                                Delete</label>
+                        </li>
+                        <li #btnBack disabled="true"><i class="fa fa-reply" aria-hidden="true" title="Back"></i>
+                            <label>
+                                Back</label></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-                                      <div class="col-md-12 col-xs-12 col-sm no-padding-left accessrightbrd">
-<div class="col-md-12 col-xs-12 col-sm no-padding">
-                                      <span class="legal">Access Rights</span>
-                                    </div>
-                                      <div class=" col-sm-12 col-xs-12 col-md-12 no-padding-left" style="margin-top: 2%;margin-bottom:2%;">
-                                            <div class=" col-sm-12 col-xs-12 col-md-12 no-padding" >
-                                                    
-                                        <div class=" col-sm-12 col-xs-12 col-md-4 no-padding">
-                                                <div class="form-group">
-                                                        <label class="col-sm-4 col-md-5 col-xs-4 control-label no-padding" for="form-field-1">
-                                                            Sponsor Bank Code
-                                                        </label>
-                                                        <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                            <input type="text" id="ddlSponsorBankCodeId" class="col-sm-12 col-md-12 col-xs-12 no-padding" />
-                                                        </div>
-                                                    </div>
-                                            </div> 
-                                            <div class=" col-sm-12 col-xs-12 col-md-4">
-                                                    <div class="form-group">
-                                                            <label class="col-sm-4 col-md-5 col-xs-4 control-label no-padding" for="form-field-1">
-                                                                Email to be sent on
-                                                            </label>
-                                                            <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                                <input type="text" id="txtEmailSendTo" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12 no-padding" />
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                <div class=" col-sm-12 col-xs-12 col-md-4">
-                                                        <div class="form-group">
-                                                                <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
-                                                                        Access Code
-                                                                </label>
-                                                                <div id="User" class="col-sm-8 col-md-6 col-xs-7 no-padding-right radio accessradiobtn">
-                                                                    <label class="lblradiobtnss col-md-12 col-sm-6 col-xs-6">
-                                                                        <input name="rdoNomUser" id="Radio1" value="a" type="checkbox" onclick="RemoveClass();" />
-                                                                        <span class="checkboxpadding">Allow Fund Transfer</span>
-                                                                    </label>
-                                                                    <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
-                                                                        <input name="rdoNomUser" id="Radio2" value="u" type="checkbox" onclick="RemoveClass();" />
-                                                                        <span class="checkboxpadding">Is Ziplink</span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                    </div>
-                                                    </div>
-                                                    <div class=" col-sm-12 col-xs-12 col-md-12 no-padding" >
-                                                        <div class="form-group">
-                                                            <label class="col-sm-4 col-md-1 col-xs-4 control-label no-padding" for="form-field-1">
-                                                                   Mandate Access 
-                                                            </label>
-                                                            <div id="User" class="col-sm-8 col-md-7 col-xs-7 no-padding-right radio accessradiobtn">
-                                                                <label class="lblradiobtnss col-md-12 col-sm-6 col-xs-6">
-                                                                    <input name="rdoNomUser" id="Radio1" value="a" type="checkbox" onclick="RemoveClass();" />
-                                                                    <span class="checkboxpadding">Single Mandate</span>
-                                                                </label>
-                                                                <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
-                                                                    <input name="rdoNomUser" id="Radio2" value="u" type="checkbox" onclick="RemoveClass();" />
-                                                                    <span class="checkboxpadding">Bulk Validation</span>
-                                                                </label>
-                                                                <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
-                                                                    <input name="rdoNomUser" id="Radio2" value="u" type="checkbox" onclick="RemoveClass();" />
-                                                                    <span class="checkboxpadding">Mandate Edit</span>
-                                                                </label>
-                                                                <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
-                                                                    <input name="rdoNomUser" id="Radio2" value="u" type="checkbox" onclick="RemoveClass();" />
-                                                                    <span class="checkboxpadding">Reference Edit</span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                          </div>
+        <label id="lblmsg" class="status-lbl" style="display: none;">
+        </label>
+        <div id="divform" class=" col-md-12 col-sm-12 col-xs-12 no-padding" style="display: block;">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+
+                <div class=" col-sm-12 col-xs-12 col-md-12 panelborder">
+                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+                        <div class="form-group">
+                            <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
+                                User Type
+                            </label>
+                            <div id="User" class="col-sm-8 col-md-7 col-xs-7 no-padding-right radio userradiobtn">
+                                <label class="lblradiobtnss col-md-6 col-sm-6 col-xs-6">
+                                    <input name="rdoNomUser" id="Radio1" value="a" type="radio"
+                                        onclick="RemoveClass();" />
+                                    <span>Administrator</span>
+                                </label>
+                                <label class="lblradiobtnss col-md-6 col-sm-3 col-xs-6">
+                                    <input name="rdoNomUser" id="Radio2" value="u" type="radio"
+                                        onclick="RemoveClass();" />
+                                    <span>User</span>
+                                </label>
+                            </div>
                         </div>
-                  
-              
-          </div>
-      </div>
-  </div>
-</div>
+                        <div class="form-group">
+                            <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
+                                User ID
+                            </label>
+                            <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
+                                <input type="text" id="txtuserId" onkeyup="RemoveClass();"
+                                    class="col-sm-12 col-md-12 col-xs-12" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+                        <div class="form-group">
+                            <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
+                                Contact No.
+                            </label>
+                            <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
+                                <input type="text" id="txtContactNo" class="col-sm-12 col-md-12 col-xs-12" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
+                                Password
+                            </label>
+                            <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
+                                <input type="password" id="txtPassWord" onkeyup="RemoveClass();"
+                                    class="col-sm-12 col-md-12 col-xs-12" />
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+                        <div class="form-group">
+                            <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
+                                Email Address
+                            </label>
+                            <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
+                                <input type="text" id="txtEmailId" class="col-sm-12 col-md-12 col-xs-12" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding" for="form-field-1">
+                                Confirm Password
+                            </label>
+                            <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
+                                <input type="password" id="txtConFirmPassword" onkeyup="RemoveClass();"
+                                    class="col-sm-12 col-md-12 col-xs-12" />
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-12 col-xs-12 col-sm no-padding-left accessrightbrd">
+                        <div class="col-md-12 col-xs-12 col-sm no-padding">
+                            <span class="legal">Access Rights</span>
+                        </div>
+                        <div class=" col-sm-12 col-xs-12 col-md-12 no-padding-left"
+                            style="margin-top: 2%;margin-bottom:2%;">
+                            <div class=" col-sm-12 col-xs-12 col-md-12 no-padding">
+
+                                <div class=" col-sm-12 col-xs-12 col-md-4 no-padding">
+                                    <div class="form-group">
+                                        <label class="col-sm-4 col-md-5 col-xs-4 control-label no-padding"
+                                            for="form-field-1">
+                                            Sponsor Bank Code
+                                        </label>
+                                        <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
+                                            <input type="text" id="ddlSponsorBankCodeId"
+                                                class="col-sm-12 col-md-12 col-xs-12 no-padding" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-12 col-xs-12 col-md-4">
+                                    <div class="form-group">
+                                        <label class="col-sm-4 col-md-5 col-xs-4 control-label no-padding"
+                                            for="form-field-1">
+                                            Email to be sent on
+                                        </label>
+                                        <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
+                                            <input type="text" id="txtEmailSendTo" onkeyup="RemoveClass();"
+                                                class="col-sm-12 col-md-12 col-xs-12 no-padding" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-12 col-xs-12 col-md-4">
+                                    <div class="form-group">
+                                        <label class="col-sm-4 col-md-4 col-xs-4 control-label no-padding"
+                                            for="form-field-1">
+                                            Access Code
+                                        </label>
+                                        <div id="User"
+                                            class="col-sm-8 col-md-6 col-xs-7 no-padding-right radio accessradiobtn">
+                                            <label class="lblradiobtnss col-md-12 col-sm-6 col-xs-6">
+                                                <input name="rdoNomUser" id="Radio1" value="a" type="checkbox"
+                                                    onclick="RemoveClass();" />
+                                                <span class="checkboxpadding">Allow Fund Transfer</span>
+                                            </label>
+                                            <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
+                                                <input name="rdoNomUser" id="Radio2" value="u" type="checkbox"
+                                                    onclick="RemoveClass();" />
+                                                <span class="checkboxpadding">Is Ziplink</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-sm-12 col-xs-12 col-md-12 no-padding">
+                                <div class="form-group">
+                                    <label class="col-sm-4 col-md-1 col-xs-4 control-label no-padding"
+                                        for="form-field-1">
+                                        Mandate Access
+                                    </label>
+                                    <div id="User"
+                                        class="col-sm-8 col-md-7 col-xs-7 no-padding-right radio accessradiobtn">
+                                        <label class="lblradiobtnss col-md-12 col-sm-6 col-xs-6">
+                                            <input name="rdoNomUser" id="Radio1" value="a" type="checkbox"
+                                                onclick="RemoveClass();" />
+                                            <span class="checkboxpadding">Single Mandate</span>
+                                        </label>
+                                        <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
+                                            <input name="rdoNomUser" id="Radio2" value="u" type="checkbox"
+                                                onclick="RemoveClass();" />
+                                            <span class="checkboxpadding">Bulk Validation</span>
+                                        </label>
+                                        <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
+                                            <input name="rdoNomUser" id="Radio2" value="u" type="checkbox"
+                                                onclick="RemoveClass();" />
+                                            <span class="checkboxpadding">Mandate Edit</span>
+                                        </label>
+                                        <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
+                                            <input name="rdoNomUser" id="Radio2" value="u" type="checkbox"
+                                                onclick="RemoveClass();" />
+                                            <span class="checkboxpadding">Reference Edit</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

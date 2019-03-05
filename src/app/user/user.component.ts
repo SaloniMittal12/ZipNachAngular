@@ -7,11 +7,12 @@ import { NavbarService } from '../navbar.service';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-
+  submitted = false;
   constructor(public nav: NavbarService) { }
 
   ngOnInit() {
     this.nav.show();
+
 
   }
 
