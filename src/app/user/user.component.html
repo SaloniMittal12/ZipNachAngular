@@ -33,7 +33,7 @@
       </label>
       <div id="divform" class=" col-md-12 col-sm-12 col-xs-12 no-padding" style="display: block;">
           <div class="col-md-12 col-sm-12 col-xs-12">
-              
+            <form class="form loginplace" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                                       <div class=" col-sm-12 col-xs-12 col-md-12 panelborder">
                                           <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
                                               <div class="form-group">
@@ -42,11 +42,13 @@
                                                   </label>
                                                   <div id="User" class="col-sm-8 col-md-7 col-xs-7 no-padding-right radio userradiobtn">
                                                       <label class="lblradiobtnss col-md-6 col-sm-6 col-xs-6">
-                                                          <input name="rdoNomUser" id="Radio1" value="a" type="radio" onclick="RemoveClass();" />
+                                                          <input name="rdoNomUser"  value="a" type="radio" formControlName="Administrator"
+                                                          [ngClass]="{'is-invalid': submitted && f.Administrator.errors }" />
                                                           <span>Administrator</span>
                                                       </label>
                                                       <label class="lblradiobtnss col-md-6 col-sm-3 col-xs-6">
-                                                          <input name="rdoNomUser" id="Radio2" value="u" type="radio" onclick="RemoveClass();" />
+                                                          <input name="rdoNomUser" value="u" type="radio" formControlName="User"
+                                                          [ngClass]="{'is-invalid': submitted && f.User.errors }" />
                                                           <span>User</span>
                                                       </label>
                                                   </div>
@@ -56,7 +58,8 @@
                                                       User ID
                                                   </label>
                                                   <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                      <input type="text" id="txtuserId" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12" />
+                                                      <input type="text" id="txtuserId" formControlName="UserID"
+                                                      [ngClass]="{'is-invalid': submitted && f.UserID.errors }" class="col-sm-12 col-md-12 col-xs-12" />
                                                   </div>
                                               </div>
                                               
@@ -67,7 +70,8 @@
                                                       Contact No.
                                                   </label>
                                                   <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                      <input type="text" id="txtContactNo" class="col-sm-12 col-md-12 col-xs-12" />
+                                                      <input type="text" formControlName="ContactNo"
+                                                      [ngClass]="{'is-invalid': submitted && f.ContactNo.errors }" class="col-sm-12 col-md-12 col-xs-12" />
                                                   </div>
                                               </div>
                                               <div class="form-group">
@@ -75,7 +79,8 @@
                                                       Password
                                                   </label>
                                                   <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                      <input type="password" id="txtPassWord" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12" />
+                                                      <input type="password" formControlName="Password"
+                                                      [ngClass]="{'is-invalid': submitted && f.Password.errors }" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12" />
                                                   </div>
                                               </div>
                                                
@@ -88,7 +93,8 @@
                                                       Email Address
                                                   </label>
                                                   <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                      <input type="text" id="txtEmailId" class="col-sm-12 col-md-12 col-xs-12" />
+                                                      <input type="text" formControlName="EmailAddress"
+                                                      [ngClass]="{'is-invalid': submitted && f.EmailAddress.errors }" class="col-sm-12 col-md-12 col-xs-12" />
                                                   </div>
                                               </div>
                                               <div class="form-group">
@@ -96,7 +102,8 @@
                                                       Confirm Password
                                                   </label>
                                                   <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                      <input type="password" id="txtConFirmPassword" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12" />
+                                                      <input type="password" formControlName="ConfirmPassword"
+                                                      [ngClass]="{'is-invalid': submitted && f.ConfirmPassword.errors }" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12" />
                                                   </div>
                                               </div>
                                                 
@@ -117,7 +124,8 @@
                                                             Sponsor Bank Code
                                                         </label>
                                                         <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                            <input type="text" id="ddlSponsorBankCodeId" class="col-sm-12 col-md-12 col-xs-12 no-padding" />
+                                                            <input type="text" formControlName="SponsorBankCode"
+                                                            [ngClass]="{'is-invalid': submitted && f.SponsorBankCode.errors }" class="col-sm-12 col-md-12 col-xs-12 no-padding" />
                                                         </div>
                                                     </div>
                                             </div> 
@@ -127,7 +135,8 @@
                                                                 Email to be sent on
                                                             </label>
                                                             <div class="col-sm-7 col-md-7 col-xs-7 no-padding-right">
-                                                                <input type="text" id="txtEmailSendTo" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12 no-padding" />
+                                                                <input type="text" formControlName="Emailtobesenton"
+                                                                [ngClass]="{'is-invalid': submitted && f.Emailtobesenton.errors }" onkeyup="RemoveClass();" class="col-sm-12 col-md-12 col-xs-12 no-padding" />
                                                             </div>
                                                         </div>
                                                 </div>
@@ -138,11 +147,13 @@
                                                                 </label>
                                                                 <div id="User" class="col-sm-8 col-md-6 col-xs-7 no-padding-right radio accessradiobtn">
                                                                     <label class="lblradiobtnss col-md-12 col-sm-6 col-xs-6">
-                                                                        <input name="rdoNomUser" id="Radio1" value="a" type="checkbox" onclick="RemoveClass();" />
+                                                                        <input name="rdoNomUser" formControlName="AllowFundTransfer"
+                                                                        [ngClass]="{'is-invalid': submitted && f.AllowFundTransfer.errors }" value="a" type="checkbox" onclick="RemoveClass();" />
                                                                         <span class="checkboxpadding">Allow Fund Transfer</span>
                                                                     </label>
                                                                     <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
-                                                                        <input name="rdoNomUser" id="Radio2" value="u" type="checkbox" onclick="RemoveClass();" />
+                                                                        <input name="rdoNomUser" formControlName="IsZiplink"
+                                                                        [ngClass]="{'is-invalid': submitted && f.IsZiplink.errors }" value="u" type="checkbox" onclick="RemoveClass();" />
                                                                         <span class="checkboxpadding">Is Ziplink</span>
                                                                     </label>
                                                                 </div>
@@ -156,19 +167,23 @@
                                                             </label>
                                                             <div id="User" class="col-sm-8 col-md-7 col-xs-7 no-padding-right radio accessradiobtn">
                                                                 <label class="lblradiobtnss col-md-12 col-sm-6 col-xs-6">
-                                                                    <input name="rdoNomUser" id="Radio1" value="a" type="checkbox" onclick="RemoveClass();" />
+                                                                    <input name="rdoNomUser" formControlName="SingleMandate"
+                                                                    [ngClass]="{'is-invalid': submitted && f.SingleMandate.errors }" value="a" type="checkbox" onclick="RemoveClass();" />
                                                                     <span class="checkboxpadding">Single Mandate</span>
                                                                 </label>
                                                                 <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
-                                                                    <input name="rdoNomUser" id="Radio2" value="u" type="checkbox" onclick="RemoveClass();" />
+                                                                    <input name="rdoNomUser" formControlName="BulkValidation"
+                                                                    [ngClass]="{'is-invalid': submitted && f.BulkValidation.errors }" value="u" type="checkbox" onclick="RemoveClass();" />
                                                                     <span class="checkboxpadding">Bulk Validation</span>
                                                                 </label>
                                                                 <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
-                                                                    <input name="rdoNomUser" id="Radio2" value="u" type="checkbox" onclick="RemoveClass();" />
+                                                                    <input name="rdoNomUser" formControlName="MandateEdit"
+                                                                    [ngClass]="{'is-invalid': submitted && f.MandateEdit.errors }" value="u" type="checkbox" onclick="RemoveClass();" />
                                                                     <span class="checkboxpadding">Mandate Edit</span>
                                                                 </label>
                                                                 <label class="lblradiobtnss col-md-12 col-sm-3 col-xs-6">
-                                                                    <input name="rdoNomUser" id="Radio2" value="u" type="checkbox" onclick="RemoveClass();" />
+                                                                    <input name="rdoNomUser" formControlName="ReferenceEdit"
+                                                                    [ngClass]="{'is-invalid': submitted && f.ReferenceEdit.errors }" value="u" type="checkbox" onclick="RemoveClass();" />
                                                                     <span class="checkboxpadding">Reference Edit</span>
                                                                 </label>
                                                             </div>
@@ -179,6 +194,7 @@
                   
               
           </div>
+        </form>
       </div>
   </div>
 </div>
